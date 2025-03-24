@@ -49,7 +49,9 @@ Eğer Docker kullanmıyorsanız, RabbitMQ’yu manuel olarak indirip çalıştı
 **SqLite veritabanının api ve worker service için ortak kullanılması için data katmanı oluşturuldu ve database'e ulaşabilmek için api projesinde ve background services projesinde
 appsettings.json dosyasında aşağıdaki satır kendi local path'iniz olarak değiştirilmesi gerekmektedir.
  "ConnectionStrings": {
-    "DefaultConnection": "Data Source=C:\\Users\\Semanur\\Desktop\\OrderManagementSystem\\OrderManagementData\\orders.db"  }
+    "DefaultConnection": "Data Source=localPath\\OrderManagementSystem\\OrderManagementData\\orders.db"  }
+
+    not:"localPath" kısmına kendi path'inizi yazmanız gerekir.
 
 
 **Uygulamayı Çalıştır
